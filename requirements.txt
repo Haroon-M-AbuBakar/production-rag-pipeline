@@ -1,0 +1,16 @@
+# Core Framework & LLM Orchestration
+langchain==0.3.18
+langchain-core==0.3.33
+langchain-community==0.3.17
+
+# Vector Database Client & Integration
+qdrant-client==1.13.0
+langchain-qdrant==0.2.0
+
+# Evaluation Framework
+ragas==0.4.3
+
+# Utilities & Environment Configuration
+python-dotenv==1.0.1
+pydantic==2.10.6
+fastembed==0.4.3
