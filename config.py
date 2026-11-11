@@ -6,14 +6,15 @@ load_dotenv()
 
 class Settings:
     # API Keys
-    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "sk-dummy-key-not-used")
     
     # Qdrant Vector Store Config
     QDRANT_URL: str = os.getenv("QDRANT_URL", "http://localhost:6333")
     QDRANT_API_KEY: str = os.getenv("QDRANT_API_KEY", "")
+    qdrant_collection: str = "documents"
     
     # Model Configurations
-    EMBEDDING_MODEL: str = "BAAI/bge-small-en-v1.5"
+    embedding_model: str = "BAAI/bge-small-en-v1.5"
     GENERATION_MODEL: str = "gpt-4o-mini"
     
     # RAG Hyperparameters
